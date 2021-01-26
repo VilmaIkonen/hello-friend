@@ -1,0 +1,18 @@
+:root {
+  --colorWhite: #ffffff;
+  --colorAHover: #ced4dd;
+  --colorHeaderFooter: #611e14;
+  --colorLightGreen: #737c5e;
+  --colorRed: #821f18;
+  --colorDark: #20160e;
+}
+
+body {
+  background-color: #737c5e;
+  position: relative;
+  background: url("https://source.unsplash.com/VDXtVYJVj7A") fixed center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  color: var(--colorDark);
+}
