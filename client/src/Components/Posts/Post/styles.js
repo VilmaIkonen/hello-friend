@@ -1,52 +1,55 @@
 import { makeStyles } from '@material-ui/core/styles';
+import { COLORS } from '../../../styleConstants'
 
 export default makeStyles({
   media: {
     height: 0,
     paddingTop: '56.25%',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    backgroundBlendMode: 'darken',
+    backgroundColor: COLORS.colorTextSecondary
   },
   border: {
-    border: 'solid',
+    border: 'solid'
   },
   fullHeightCard: {
-    height: '100%',
+    height: '100%'
   },
   card: {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
-    borderRadius: '15px',
+    borderRadius: '5px',
     height: '100%',
-    position: 'relative',
+    position: 'relative'
   },
   overlay: {
     position: 'absolute',
     top: '20px',
     left: '20px',
-    color: 'white',
+    color: COLORS.colorTextSecondary
   },
   overlay2: {
     position: 'absolute',
     top: '20px',
     right: '20px',
-    color: 'white',
+    color: COLORS.colorTextSecondary
   },
   grid: {
-    display: 'flex',
+    display: 'flex'
   },
   details: {
     display: 'flex',
     justifyContent: 'space-between',
-    margin: '20px',
+    margin: '20px'
   },
   title: {
-    padding: '0 16px',
+    padding: '0 16px'
   },
   cardActions: {
     padding: '0 16px 8px 16px',
     display: 'flex',
-    justifyContent: 'space-between',
+    justifyContent: 'space-between'
   },
+  likeDeleteButton: {
+    color: COLORS.colorButton
+  }
 });

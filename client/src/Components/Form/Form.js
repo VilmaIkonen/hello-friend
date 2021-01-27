@@ -51,7 +51,7 @@ const Form = ({currentId, setCurrentId}) => {
 
   return (
     <Paper className={classes.paper}>
-    {/* classes.root/classes.form --> Multiple templates w template string to getstyling from MUI to both root and form (see styles.css) */}
+    {/* classes.root/classes.form --> Multiple templates w template string to get styling from MUI to both root and form (see styles.css) */}
       <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}> 
         <Typography variant="h6">{currentId ? 'Edit the' : 'Create a'} note</Typography>
         <TextField 
@@ -96,15 +96,14 @@ const Form = ({currentId, setCurrentId}) => {
         </div>
         <Button 
           className={classes.buttonSubmit} 
-          variant="contained" 
-          color="primary"
+          variant="contained"
           size="large"
           type="submit"
           fullWidth>Submit
         </Button>
         <Button 
+          className={classes.buttonClear}
           variant="contained" 
-          color="secondary"
           size="small"
           onClick={clear}
           fullWidth>Clear

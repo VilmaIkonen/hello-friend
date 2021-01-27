@@ -1,4 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
+import { COLORS } from '../../styleConstants'
 
 export default makeStyles((theme) => ({
   root: {
@@ -8,7 +9,7 @@ export default makeStyles((theme) => ({
   },
   paper: {
     padding: theme.spacing(2),
-    backgroundColor: '#ffffff'
+    backgroundColor: COLORS.colorTextSecondary
   },
   form: {
     display: 'flex',
@@ -21,6 +22,9 @@ export default makeStyles((theme) => ({
   },
   buttonSubmit: {
     marginBottom: 10,
-    
+    backgroundColor: COLORS.colorButton    
   },
+  buttonClear: {
+    backgroundColor: COLORS.colorTextHover
+  }
 }));
