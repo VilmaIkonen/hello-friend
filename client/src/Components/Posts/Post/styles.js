@@ -1,5 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
-import { COLORS } from '../../../styleConstants'
+import { COLORS, FONTS } from '../../../styleConstants'
 
 export default makeStyles({
   media: {
@@ -17,21 +17,21 @@ export default makeStyles({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
-    borderRadius: '5px',
+    borderRadius: '.3rem',
     height: '100%',
     position: 'relative'
   },
   overlay: {
     position: 'absolute',
-    top: '20px',
-    left: '20px',
+    top: '1rem',
+    left: '1rem',
     color: COLORS.colorTextSecondary
   },
   overlay2: {
     position: 'absolute',
-    top: '20px',
-    right: '20px',
-    color: COLORS.colorTextSecondary
+    top: '1rem',
+    right: '1rem',
+    color: COLORS.colorTextSecondary    
   },
   grid: {
     display: 'flex'
@@ -39,13 +39,17 @@ export default makeStyles({
   details: {
     display: 'flex',
     justifyContent: 'space-between',
-    margin: '20px'
+    margin: '1rem',
   },
   title: {
-    padding: '0 16px'
+    padding: '0 1rem',
+    fontFamily: FONTS.fontHeadingEmphasis   
+  },
+  message: {
+    fontFamily: FONTS.fontText
   },
   cardActions: {
-    padding: '0 16px 8px 16px',
+    padding: '0 1rem .5rem 1rem',
     display: 'flex',
     justifyContent: 'space-between'
   },

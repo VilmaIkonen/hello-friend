@@ -28,9 +28,9 @@ const Post = ({post, setCurrentId}) => {
         </Button>
       </div>     
       <div className={classes.details}>
-        <Typography variant="body2" color="black">{post.tags.map((tag) => `#${tag} `)}</Typography>
+        <Typography variant="body2">{post.tags.map((tag) => `#${tag} `)}</Typography>
       </div>
-      <Typography className={classes.title} variant="h5" gutterTop>{post.title}</Typography>    
+      <Typography className={classes.title} variant="h4" gutterTop>{post.title}</Typography>    
       <CardContent>
         <Typography className={classes.message} variant="body1" gutterBottom>{post.message}</Typography>
       </CardContent>
