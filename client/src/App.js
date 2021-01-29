@@ -6,7 +6,7 @@ import { getPosts } from './actions/posts'
 import Teddy from './images/Teddy.png';
 import Posts from './Components/Posts/Posts';
 import Form from './Components/Form/Form';
-import useStyles from './styles'
+import useStyles from './stylesApp'
 
 const App = () => {
 

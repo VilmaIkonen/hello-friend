@@ -1,5 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
-import { COLORS, FONTS } from '../../styleConstants'
+import { COLORS, FONTS } from '../../Constants/styleConstants'
 
 export default makeStyles((theme) => ({
   root: {
@@ -16,6 +16,9 @@ export default makeStyles((theme) => ({
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'center'
+  },
+  heading: {
+    fontFamily: FONTS.fontText
   },
   fileInput: {
     width: '92%',

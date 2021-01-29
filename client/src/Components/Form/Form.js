@@ -3,7 +3,7 @@ import { TextField, Button, Typography, Paper } from '@material-ui/core';
 import FileBase from 'react-file-base64';
 import { useDispatch, useSelector } from 'react-redux';
 
-import useStyles from './styles';
+import useStyles from './stylesForm';
 import { createPost, updatePost } from '../../actions/posts';
 
 const Form = ({currentId, setCurrentId}) => {
@@ -53,7 +53,7 @@ const Form = ({currentId, setCurrentId}) => {
     <Paper className={classes.paper}>
     {/* classes.root/classes.form --> Multiple templates w template string to get styling from MUI to both root and form (see styles.css) */}
       <form autoComplete="off" noValidate className={`${classes.root} ${classes.form}`} onSubmit={handleSubmit}> 
-        <Typography variant="h6">{currentId ? 'Edit the' : 'Create a'} note</Typography>
+        <Typography className={classes.heading}variant="h6">{currentId ? 'Edit the' : 'Create a'} note</Typography>
         <TextField 
           name="creator" 
           variant="outlined" 
